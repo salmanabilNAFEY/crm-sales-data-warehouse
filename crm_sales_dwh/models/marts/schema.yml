@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: fct_sales_pipeline
+    columns:
+      - name: opportunity_id
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_accounts
+    columns:
+      - name: account
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_products
+    columns:
+      - name: product
+        data_tests:
+          - not_null
+          - unique
+
+  - name: dim_sales_teams
+    columns:
+      - name: sales_agent
+        data_tests:
+          - not_null
+          - unique
